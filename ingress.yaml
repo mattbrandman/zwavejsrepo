@@ -8,11 +8,13 @@ spec:
       http:
         paths:
           - backend:
+            pathType: Exact
               service:
                 name: zwave
                 port:
                   number: 8091
           - backend:
+            pathType: Exact
               service:
                 name: zwave
                 port:
