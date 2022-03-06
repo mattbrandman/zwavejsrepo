@@ -9,4 +9,4 @@ spec:
         paths:
           - backend:
               serviceName: zwave
-              servicePort: http
+              servicePort: 8091

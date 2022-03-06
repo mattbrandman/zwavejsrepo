@@ -5,11 +5,10 @@ metadata:
 spec:
   ports:
     - name: http
-      port: 80
-      targetPort: http
+      port: 8091
+      targetPort: 8091
     - name: websocket
       port: 3000
       targetPort: 3000
-      nodePort: 3000
   selector:
     name: zwave
