@@ -51,7 +51,7 @@ spec:
         #   readOnly: true
         #   subPath: settings.json
       nodeSelector:
-        homeassistant=supported #<--- the name of your cluster node that the zwave usb stick in
+        homeassistant: supported #<--- the name of your cluster node that the zwave usb stick in
       volumes:
       # - name: config <-- if putting your settings.json in a secret
       #   secret:
