@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: zwave
@@ -8,5 +8,12 @@ spec:
       http:
         paths:
           - backend:
-              serviceName: zwave
-              servicePort: 8091
+              service:
+                name: zwave
+                port:
+                  number: 8091
+          - backend:
+              service:
+                name: zwave
+                port:
+                  number: 3000
