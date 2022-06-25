@@ -52,4 +52,4 @@ spec:
           path: /dev/ttyUSB0
       - name: data
         hostPath:
-          path: /zwave/data
+          path: /zwave/datas
