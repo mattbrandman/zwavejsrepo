@@ -49,7 +49,7 @@ spec:
         hostPath:
           # Do not use /dev/ttyUSBX serial devices, as those mappings can change over time.
           # Instead, use the /dev/serial/by-id/X serial device for your Z-Wave stick.
-          path: /dev/ttyUSB0
+          path: /dev/ttyACM0
       - name: data
         hostPath:
           path: /zwave/datas
