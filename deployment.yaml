@@ -30,7 +30,7 @@ spec:
           allowPrivilegeEscalation: true
           privileged: true
         volumeMounts:
-        - mountPath: /dev/ttyUSB0
+        - mountPath: /dev/ttyACM0
           name: dev-usb0
         - mountPath: /usr/src/app/store
           name: data
